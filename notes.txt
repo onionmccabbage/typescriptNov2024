@@ -1,0 +1,4 @@
+TypeScript - November 2024
+==========================
+
+Toby Dussek
