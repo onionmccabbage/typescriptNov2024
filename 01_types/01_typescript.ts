@@ -36,3 +36,11 @@
     type Arbitrary = 'literaly this' | 10 | false | Kingdom // any mix of types
     let r:Arbitrary = 10
 }
+{
+    // types with functions
+    const fn = (x)=>{
+        return x
+    }
+    let n = 4
+    fn(n)
+}
