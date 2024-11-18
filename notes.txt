@@ -35,6 +35,7 @@ Monday
 - tidy way to see html pages: liveserver (and web browser events)
 - support for older browsers etc.
 - number data type
+q - is there a way to type-safe thereturn of an interface method???
 - functions and types
 - ES classes
 - ways to run and automate: tsc ts-node code runner
