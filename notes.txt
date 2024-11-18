@@ -12,34 +12,35 @@ Toby Dussek November 17-19
 All my code will be here: https://github.com/onionmccabbage/typescriptNov2024
 
 Monday
-- welcome and tech check
-- choose a folder to work in: install NodeJS/npm then install typescript globaly
+> welcome and tech check
+> choose a folder to work in: install NodeJS/npm then install typescript globaly
   (use a command prompt to...)
-  - npm install -g typescript
-  - npm install -g ts-node
+  > npm install -g typescript
+  > npm install -g ts-node
   - later we may need to npm install types for (e.g.) @angular or @react or custom...
 - Modern ECMAScript version, support, legacy...
    - common name JavaScript
    - also known as ECMAScript, ES, ES3, ES5, ES6, ES7 etc
    - sometimes referred to as ESNext, ES6+
    - recently ES2022, ES2023... (these are all names for JavaScript)
-- TS is DEVELOPMENT TIME ONLY - it NEVER makes it to the end user
-- sometimes it complains 'cannot find console...' - fix with ts-config DOM
-- Typescript why and how
+> TS is DEVELOPMENT TIME ONLY - it NEVER makes it to the end user
+> sometimes it complains 'cannot find console...' - fix with ts-config DOM
+> Typescript why and how
 - tsconfig
-- return void and never
-- using class and interface for types
+> return void and never
+> using class and interface for types
 - private...
 - best pactice: declare types/interfaces in another module and import that
-- default ts output is ES3, we can --target es2024 (or relevant version)
+> default ts output is ES3, we can --target es2024 (or relevant version)
 - tidy way to see html pages: liveserver (and web browser events)
-- support for older browsers etc.
-- number data type
-q - is there a way to type-safe thereturn of an interface method???
-- functions and types
-- ES classes
-- ways to run and automate: tsc ts-node code runner
-- review exercise
+> support for older browsers etc.
+  see https://compat-table.github.io/compat-table/es6/ and https://caniuse.com/?search=index
+> number data type
+> is there a way to type-safe the return of an interface method??? Yes - see 02_class.ts
+> functions and types
+> ES classes
+> ways to run and automate: tsc ts-node code runner
+> review exercise
 
 Tuesday
 - brief review so far
