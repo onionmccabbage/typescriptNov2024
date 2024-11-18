@@ -31,9 +31,16 @@ class Snap implements Photo2 {
         this.title = snap.title
         this.url   = snap.url
     }
-    prettyPrint = ():string => {
+    // ways to declare a method
+    prettyPrint():string{ // this is far more common
         return `This snap is ${this.title} url ${this.url}`
-    };
+    }
+    // or
+    prettyPrint2 = ():string=>{
+        return `This snap is ${this.title} url ${this.url}`
+    }
+    // or 
+    pp = function(){} // old-skool, tr to avoid
 }
 
 // make instances
@@ -45,4 +52,5 @@ const s2:Photo = new Snap( // no need to data-type, it is implicit
      'thumbnailUrl':'http://nonsuch.ie', 
      'url'         :'bbc.co.uk/nope'})
 
-console.log(s1.title, s1['url']) // either is fine
+// console.log(s1.title, s1['url']) // either is fine
+console.log(s2.prettyPrint()) // either is fine
