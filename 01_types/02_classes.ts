@@ -13,7 +13,13 @@ interface Photo {
     prettyPrint?: ()=>{} // no implementation
 }
 
-class Snap implements Photo {
+interface Photo2 {
+    title: string
+    url: string
+    prettyPrint(): string // neat way to declare return type of a function
+  }
+
+class Snap implements Photo2 {
     albumId:number
     id:number
     title!:string // ! means we guarantee it will be not-null
