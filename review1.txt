@@ -1,4 +1,4 @@
-Review Exercise 1 40 mins
+Review Exercise 1 40 mins (until 2:40)
 =================
 This is a chance to work with TypeScript/ECMAScript in a mini project
 Tackle this however you like, the point is for you to explore using the tools
