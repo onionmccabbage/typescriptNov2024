@@ -38,9 +38,18 @@
 }
 {
     // types with functions
-    const fn = (x)=>{
-        return x
+    type Allowed = number | string
+    const fn = (x:Allowed):string=>{
+        return `${x}` // this is Javascript string interpolation (performant)
+    }
+    const fnB = ():void=>{ // remarkably common
+        // never return ANYTHING ecplicity (or explicitly return void)
+        // return 'ok'
+    }
+    const fnC = ():never=>{
+        throw Error // we never get beyond this
+        // any return must be unreachable
     }
     let n = 4
-    fn(n)
+    console.log( fn(n) )
 }

@@ -28,8 +28,8 @@ Monday
 - Typescript why and how
 - tsconfig
 - return void and never
-- private...
 - using class and interface for types
+- private...
 - best pactice: declare types/interfaces in another module and import that
 - default ts output is ES3, we can --target es2024 (or relevant version)
 - tidy way to see html pages: liveserver (and web browser events)
