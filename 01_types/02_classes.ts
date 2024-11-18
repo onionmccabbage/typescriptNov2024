@@ -20,9 +20,10 @@ class Snap implements Photo {
     url:string
     thumbnailUrl:string
     // NB remember at RUNTIME we may still pass in a non-string and JS will be fine
-    constructor(title:string, url:string) { // only (zero or) one constructor in JS
-        this.title = title
-        this.url   = url
+    // constructor(title:string, url:string) { // only (zero or) one constructor in JS
+    constructor(snap:Photo) { // only (zero or) one constructor in JS
+        this.title = snap.title
+        this.url   = snap.url
     }
     prettyPrint = ():string => {
         return `This snap is ${this.title} url ${this.url}`
@@ -30,5 +31,12 @@ class Snap implements Photo {
 }
 
 // make instances
-const s1 = new Snap('wibblywoo', 'http://nonsuch.com')
+// const s1 = new Snap('wibblywoo', 'http://nonsuch.com')
+const s2:Photo = new Snap( // no need to data-type, it is implicit
+    {'id'          :346, 
+     'albumId'     :3, 
+     'title'       :'cat', 
+     'thumbnailUrl':'http://nonsuch.ie', 
+     'url'         :'bbc.co.uk/nope'})
+
 console.log(s1.title, s1['url']) // either is fine
