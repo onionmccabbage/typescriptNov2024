@@ -23,5 +23,10 @@
 }
 
 {
-
+    // tuple desctructuring
+    const getMission = ():[string, string, string]=>{
+        return ['inform', 'educate', 'entertain']
+    }
+    const [inf,edu,ent] = getMission()
+    console.log(inf, edu,ent)
 }
