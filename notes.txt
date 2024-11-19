@@ -6,7 +6,7 @@ Toby Dussek November 17-19
 9:30  start
 11:00 coffee
 12:30 lunch until 1:30
-3:00  tea
+3:00  tea break
 4:30  end
 
 All my code will be here: https://github.com/onionmccabbage/typescriptNov2024
