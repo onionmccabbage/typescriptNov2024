@@ -1,9 +1,9 @@
-interface Penguin {
+export interface Penguin {
     breed:string
     yearOfBirth:number
 }
 
-type Dog = {
+export type Dog = {
     breed:string[]
     yearOfBirth:number
 }
