@@ -1,4 +1,4 @@
-Review Exercise 2
+Review Exercise 2 1hr 15mins (until tea break then on for a bit after)
 =================
 (use 'liveserver' or 'npx http-server' to run the html page)
 
