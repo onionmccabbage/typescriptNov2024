@@ -1,4 +1,3 @@
-// import {listOfUsers, getListOfPhotos} from './util'
 // a method to fetch the data (nb works without async but ts likes async)
 // here the generic type <T> means if we ask for User we get an array of User             | string can be left off
 const fetchFromAPI = async (category = 'users', id) => {

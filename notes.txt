@@ -43,35 +43,35 @@ Monday
 > review exercise
 
 Tuesday
-- brief review so far
+> brief review so far
 > install code runner extension - lets us run ts directly
 > generics Array<T> or T[]
   q - do generics inherit from (e.g. iterable....)
-- importing modules especially with web: type='module'
-- ...how this affects config
+> importing modules especially with web: <script type='module'>
+> ...how this affects config
 > live server plugin or npx http-server (you can npm install http-server)
-- begin looking at data sources: JSON etc
+> begin looking at data sources: JSON etc
 - types or interface (or hybrid) - mainly aim for interface, then derive other types
 - when/why you would use an Enum, Literal, tuple, Type, Interface 
   (how to choose one over another depending on what you are doing)
   https://webpack.js.org/guides/typescript/
-- Promises compared to simple event
-- automation
+> Promises compared to simple event
+> automation
 > JSON...
 nb tsc --watch will watch for changes
   - clear the cache
   - use 'live server'
   - Fetch is BROWSER ONLY
-- fetch and async-await
-- handling server responses 404 etc.
-- we can specify more than one generic type as <a, b>
-- conventions, best practice, preference...
+> fetch and async-await
+> handling server responses 404 etc.
+> we can specify more than one generic type as <a, b>
+> conventions, best practice, preference...
 - many ways to write functions
-- destructuring
+> destructuring
 - generator syntax (must use 'function*')
-- type guards: simply use logical 'if' when we need to ensure types manually
+> type guards: simply use logical 'if' when we need to ensure types manually
 - more on tsconfig: see the docs on tsconfig 
-- review exercise
+> review exercise
 
 Wednesday
 - npm init (and webpack)
