@@ -49,6 +49,7 @@ Tuesday
   q - do generics inherit from (e.g. iterable....)
 - importing modules especially with web: type='module'
 - ...how this affects config
+> live server plugin or npx http-server (you can npm install http-server)
 - begin looking at data sources: JSON etc
 - types or interface (or hybrid) - mainly aim for interface, then derive other types
 - when/why you would use an Enum, Literal, tuple, Type, Interface 
