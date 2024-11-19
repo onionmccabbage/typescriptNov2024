@@ -6,9 +6,14 @@ import {Dog, Penguin} from './util'
 // this is how we import the default
 import Arbitrary, {pi} from './maths'
 // we may directly import JSON
-import * as posts from './data.json'
+import * as posts from './data.json' // NB the JSON gets parsed into a structure
+// string interpolation - you can put any pure JS inside ${}
+const message = `Is it an object... ${typeof(posts)=='object'}`
+// JSON
+const str = JSON.stringify(posts) // convert to text string
+const obj = JSON.parse(str) // parse string to a structure
 
-console.log(posts)
+console.log(posts, message)
 
 type Animal = Penguin | Dog // we have useable types
 const gromit:Dog = {

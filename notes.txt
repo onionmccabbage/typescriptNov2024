@@ -56,6 +56,7 @@ Tuesday
   https://webpack.js.org/guides/typescript/
 - Promises compared to simple event
 - automation
+- JSON...
 nb tsc --watch will watch for changes
   - clear the cache
   - use 'live server'
