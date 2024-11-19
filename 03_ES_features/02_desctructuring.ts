@@ -15,6 +15,10 @@
 }
 
 {
+    // object destructuring
+    const program = {name:'Play School', presenter:'Floella', started:1976, end:1984}
+    const {name:n, presenter:p, ...rest} = program
+    console.log(`${n} presented by ${p} between ${rest['started']} and ${rest['end']}`)
 
 }
 
