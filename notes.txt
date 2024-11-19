@@ -45,7 +45,7 @@ Monday
 Tuesday
 - brief review so far
 - install coderunner extension - lets us run ts directly
-- generics Array<T>
+- generics Array<T> or T[]
   q - do generics inherit from (e.g. iterable....)
 - importing modules especially with web: type='module'
 - ...how this affects config
