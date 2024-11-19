@@ -55,6 +55,7 @@ Tuesday
   (how to choose one over another depending on what you are doing)
   https://webpack.js.org/guides/typescript/
 - Promises compared to simple event
+- automation
 nb tsc --watch will watch for changes
   - clear the cache
   - use 'live server'
@@ -95,3 +96,8 @@ Some references
     https://caniuse.com
     https://kangax.github.io/compat-table/es6/
     https://builtwith.com/
+
+
+VSCode Notes
+For line duplication in VSCode there is a useful shortcut ALT + SHIFT and up or down arrow depending if you want it below or above the current code block
+for mac it is OPTION +SHIFT + Up or Down arrow
