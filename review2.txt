@@ -1,0 +1,44 @@
+Review Exercise 2
+=================
+(use 'liveserver' or 'npx http-server' to run the html page)
+
+Interpret this however you like - individual or teamwork, show-and-tell after
+
+Build an app to retrieve user data from the API at
+https://jsonplaceholder.typicode.com/users
+
+You will need an interface for 'Users' but only include a few members (e.g. id, name, email, website)
+
+Optionally combine users with their todos and/or photos etc.
+The available nested routes are:
+    /posts/1/comments
+    /albums/1/photos 
+    /users/1/albums
+    /users/1/todos
+    /users/1/posts
+NB the '1' here can be any parameter. Also the 'comments' 'photos' 'posts' etc can be a paramater
+
+Ideally, build the URL using back-tick interpolation, e.g.
+  `https://jsonplaceholder.typicode.com/users/${id}/${category}`
+
+Show a nice collection of the ten users, and optionally their photo collections
+(or their 'completed' todos)
+- on a web page (preferred)
+- or use console.log
+
+Handle exceptions (catch)
+type-safe the Promise
+use async/await
+
+If you like, download the JSON and do it all offline (no fetch, just import the JSON)
+
+Remember: when you use tsc you will need to manually change the imports to look for .js
+
+Optional
+========
+Provide a way to parameterize which user to retrieve (i.e. ask in the web page)
+How could you offer a filter (say photos by user or todos by complete)...
+
+NB the API also permits fake delete, post and (real) filter - see the API documentation
+
+Consider making interfaces for Address etc. then compose the 'User' interface
