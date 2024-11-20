@@ -45,7 +45,7 @@ const keyStream$ = fromEvent(searchBox, 'keyup').pipe( // much like .then
         const input = event.target as HTMLInputElement // where did the event come from
         return input.value
     } ),
-    tap( (item)=>{
+    tap( (item)=>{ // carry out any ancilliary operations
         console.log(`We received ${item}`)
     } ),
     map( (query)=>{ // this processing  could alternatively be in the subscriber
@@ -73,6 +73,3 @@ for(let _=0;_<7;_++){
 }
 
 sub99.unsubscribe() // always good to destroy when we no longer need
-
-
-
