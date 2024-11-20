@@ -33,8 +33,8 @@ const appendResults = (container:HTMLElement, results:string[])=>{
     }
 }
 // we need to grab some bits of the DOM
-const searchBox:HTMLElement = document.querySelector('#search') // or .getElementById('search)
-const results:HTMLElement   = document.querySelector('#results')
+const searchBox:HTMLInputElement = document.querySelector('#search') as HTMLInputElement // or .getElementById('search)
+const results:HTMLUListElement   = document.querySelector('#results') as HTMLUListElement
 
 // we can make an observable (a subject)
 // by convention use a trailing $ to indicate a data-stream (an observable)
