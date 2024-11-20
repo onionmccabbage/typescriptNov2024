@@ -66,9 +66,9 @@ nb tsc --watch will watch for changes
 > handling server responses 404 etc.
 > we can specify more than one generic type as <a, b>
 > conventions, best practice, preference...
-- many ways to write functions
+> many ways to write functions
 > destructuring
-- generator syntax (must use 'function*')
+> generator syntax (must use 'function*')
 > type guards: simply use logical 'if' when we need to ensure types manually
 - more on tsconfig: see the docs on tsconfig 
 > review exercise
@@ -77,19 +77,20 @@ Wednesday
 - npm init (and webpack)
 - Brief overview of ReactJS (and the ReactJS Typescript template)
   "moduleResolution": "Node",
-- React with Typescript generics
+> React with Typescript generics
   NB you will need a trailing comma:
      const fn = async <T,>(): Promise< Array<T> > =>{}
      https://devtrium.com/posts/react-typescript-using-generics-in-react
 - more on modules and import (module.exports, type='module' old-skool commonJS etc.)
-- Observables and RxJS
+- Observables and RxJS 
   see https://rxjs.dev/guide/overview and https://rxmarbles.com/
+- show an example ofs React router
 - Array<T> and T[] are identical - it's a style choice
 - final lab
 - where to go next 
   https://www.typescriptlang.org/docs/handbook/migrating-from-javascript.html
 - end of course feedback
-   
+    https://forms.microsoft.com/e/F7YLmGDQ6K
 
 
 
