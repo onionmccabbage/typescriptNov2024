@@ -1,4 +1,4 @@
-import {fromEvent}
+import {fromEvent, map, tap, debounceTime} from 'rxjs'
 
 // here are some suggested prompts
 const testData:string[] = [
@@ -35,3 +35,17 @@ const appendResults = (container:HTMLElement, results:string[])=>{
 // we need to grab some bits of the DOM
 const searchBox:HTMLElement = document.querySelector('#search') // or .getElementById('search)
 const results:HTMLElement   = document.querySelector('#results')
+
+// we can make an observable (a subject)
+// by convention use a trailing $ to indicate a data-stream (an observable)
+const keyStream$ = fromEvent(searchBox, 'keyup').pipe( // much like .then
+    // we now hav a subject/observable
+    debounceTime(500), // wait until the user stops typing for 500 ms
+    map( (event)=>{
+        const input = event.target as HTMLInputElement // where did the event come from
+        return input.value
+    } ),
+    tap( (item)=>{
+        console.log(`We received ${item}`)
+    } )
+)
