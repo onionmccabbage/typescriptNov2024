@@ -1,0 +1,42 @@
+ 
+> observables@1.0.0 build
+> webpack --mode development --watch
+Entrypoint main =
+ERROR in main
+Module not found: Error: Can't resolve './src' in '/Users/portet01/personalrepos/typescript-course/07_observables'
+resolve './src' in '/Users/portet01/personalrepos/typescript-course/07_observables'
+  using description file: /Users/portet01/personalrepos/typescript-course/07_observables/package.json (relative path: .)
+    Field 'browser' doesn't contain a valid alias configuration
+    using description file: /Users/portet01/personalrepos/typescript-course/07_observables/package.json (relative path: ./src)
+      no extension
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/portet01/personalrepos/typescript-course/07_observables/src is not a file
+      .js
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/portet01/personalrepos/typescript-course/07_observables/src.js doesn't exist
+      .json
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/portet01/personalrepos/typescript-course/07_observables/src.json doesn't exist
+      .wasm
+        Field 'browser' doesn't contain a valid alias configuration
+        /Users/portet01/personalrepos/typescript-course/07_observables/src.wasm doesn't exist
+      as directory
+        existing directory /Users/portet01/personalrepos/typescript-course/07_observables/src
+          using description file: /Users/portet01/personalrepos/typescript-course/07_observables/package.json (relative path: ./src)
+            using path: /Users/portet01/personalrepos/typescript-course/07_observables/src/index
+              using description file: /Users/portet01/personalrepos/typescript-course/07_observables/package.json (relative path: ./src/index)
+                no extension
+                  Field 'browser' doesn't contain a valid alias configuration
+                  /Users/portet01/personalrepos/typescript-course/07_observables/src/index doesn't exist
+                .js
+                  Field 'browser' doesn't contain a valid alias configuration
+                  /Users/portet01/personalrepos/typescript-course/07_observables/src/index.js doesn't exist
+                .json
+                  Field 'browser' doesn't contain a valid alias configuration
+                  /Users/portet01/personalrepos/typescript-course/07_observables/src/index.json doesn't exist
+                .wasm
+                  Field 'browser' doesn't contain a valid alias configuration
+                  /Users/portet01/personalrepos/typescript-course/07_observables/src/index.wasm doesn't exist
+webpack 5.96.1 compiled with 1 error in 24 ms
+ 
+ 
