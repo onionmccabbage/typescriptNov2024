@@ -47,6 +47,10 @@ const keyStream$ = fromEvent(searchBox, 'keyup').pipe( // much like .then
     } ),
     tap( (item)=>{
         console.log(`We received ${item}`)
+    } ),
+    map( (query)=>{
+        console.log( suggest(testData, query) )
+        return suggest(testData, query)
     } )
 )
 // NB the observable will NOT be instantiated until there is at least one subscriber
