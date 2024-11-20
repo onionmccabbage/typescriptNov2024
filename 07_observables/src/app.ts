@@ -48,7 +48,7 @@ const keyStream$ = fromEvent(searchBox, 'keyup').pipe( // much like .then
     tap( (item)=>{
         console.log(`We received ${item}`)
     } ),
-    map( (query)=>{
+    map( (query)=>{ // this processing  could alternatively be in the subscriber
         console.log( suggest(testData, query) )
         return suggest(testData, query)
     } )
@@ -59,3 +59,20 @@ keyStream$.subscribe( (r:string | string[])=>{
     cleanUpUtil(results) // make sure we clean out any previous suggestions
     appendResults(results, r)
 } )
+
+// we can have asd many subscribers as we like
+const sub99 = keyStream$.subscribe( (r)=>{
+    console.log(`Another Subscriber is also in play`)
+} )
+
+const subscribers = []
+
+for(let _=0;_<7;_++){
+    const ns = keyStream$.subscribe( ()=>{} )
+    subscribers.push(ns)
+}
+
+sub99.unsubscribe() // always good to destroy when we no longer need
+
+
+
