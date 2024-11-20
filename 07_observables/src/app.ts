@@ -1,7 +1,7 @@
 import {fromEvent, map, tap, debounceTime} from 'rxjs'
 
 // here are some suggested prompts
-const testData:string[] = [
+const testData:string[] = [ // probably dynamically generated options
     'people',
     'planets',
     'species',
@@ -33,8 +33,8 @@ const appendResults = (container:HTMLElement, results:string[])=>{
     }
 }
 // we need to grab some bits of the DOM
-const searchBox:HTMLInputElement = document.querySelector('#search') as HTMLInputElement // or .getElementById('search)
-const results:HTMLUListElement   = document.querySelector('#results') as HTMLUListElement
+const searchBox:HTMLElement    = document.querySelector('#search') as HTMLElement // or .getElementById('search)
+const results:HTMLUListElement = document.querySelector('#results') as HTMLUListElement
 
 // we can make an observable (a subject)
 // by convention use a trailing $ to indicate a data-stream (an observable)
