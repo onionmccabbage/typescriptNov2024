@@ -23,7 +23,7 @@ const cleanUpUtil = (container:HTMLElement)=>{
 }
 
 // here is the function for append any search suggestions into the web page
-const appendResults = (container:HTMLElement, results:string[])=>{
+const appendResults = (container:HTMLElement, results:string[] | string)=>{
     for (const result of results) {
         // we need a fresh <li> for each suggestion
         const li = document.createElement('li')
@@ -49,3 +49,9 @@ const keyStream$ = fromEvent(searchBox, 'keyup').pipe( // much like .then
         console.log(`We received ${item}`)
     } )
 )
+// NB the observable will NOT be instantiated until there is at least one subscriber
+// ... so we need a subscriber
+keyStream$.subscribe( (r:string | string[])=>{
+    cleanUpUtil(results) // make sure we clean out any previous suggestions
+    appendResults(results, r)
+} )
